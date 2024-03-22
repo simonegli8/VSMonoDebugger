@@ -38,7 +38,7 @@ namespace VSMonoDebugger.Services
                     return;
                 }
 
-                hr = pane.OutputString(outputMessage);
+                hr = pane.OutputStringThreadSafe(outputMessage);
                 pane.Activate(); // Brings this pane into view
             }
         }
